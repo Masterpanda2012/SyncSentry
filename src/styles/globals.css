@@ -1,0 +1,28 @@
+@media print {
+  html, body {
+    background: #0f172a !important;
+    color: #e2e8f0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .avoid-page-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .page-break-before {
+    break-before: page;
+    page-break-before: always;
+  }
+}
